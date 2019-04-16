@@ -1,0 +1,26 @@
+{
+  "name": "logistics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "8.11.2",
+    "npm": "6.5.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "izzy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10"
+  }
+}
