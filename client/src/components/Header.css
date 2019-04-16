@@ -1,0 +1,25 @@
+.navbar {
+    min-height: 60px;
+    background-color: #4e5a62;
+  }
+  
+  .navbar-brand {
+    padding: 3px 15px;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  .navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 13px;
+    padding: 9px 10px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav > li > a {
+      /* (80px - line-height of 27px) / 2 = 26.5px */
+      padding-top: 16.5px;
+      padding-bottom: 16.5px;
+      line-height: 27px;
+    }
+  }
